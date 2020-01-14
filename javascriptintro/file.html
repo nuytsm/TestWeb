@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<script type="text/javascript" src="file.js"></script>
+<style>
+#circle {
+  width: 50px;
+  height: 50px;
+  border-radius:25px;
+  background-color: red;
+  position: relative;
+   animation-name: example;
+   animation-duration: 28s;
+   animation-iteration-count: infinite;
+}
+
+@keyframes example {
+   0%   {background-color:red; left:0px; top:0px;}
+   50% {background-color:red; left:700px; top:0px;}
+   100%   {background-color:red; left:0px; top:0px;}
+} 
+
+@keyframes example2 {
+   0%   {background-color:red; left:0px; top:0px;}
+   50% {background-color:red; left:300px; top:0px;}
+   100%   {background-color:red; left:0px; top:400px;}
+} 
+
+
+</style>
+</head>
+<body>
+<div width="100%"><h2 width="30px">Clicked: <span id="clicked"></span></h2></div>
+<div id="circle" onclick="divclick()"></div>
+
+</body>
+</html>
